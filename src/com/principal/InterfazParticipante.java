@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package com.principal;
 
 import javax.swing.JOptionPane;
@@ -168,7 +164,7 @@ public class InterfazParticipante extends javax.swing.JFrame {
                 btnPresentarActionPerformed(evt);
             }
         });
-        plBackground.add(btnPresentar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 290, 120, 40));
+        plBackground.add(btnPresentar, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 290, 120, 40));
 
         btnCapturar.setBackground(new java.awt.Color(0, 0, 51));
         btnCapturar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -180,7 +176,7 @@ public class InterfazParticipante extends javax.swing.JFrame {
                 btnCapturarActionPerformed(evt);
             }
         });
-        plBackground.add(btnCapturar, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 290, 120, 40));
+        plBackground.add(btnCapturar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 290, 120, 40));
 
         lbImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/principal/img/perfil.png"))); // NOI18N
         plBackground.add(lbImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 110, -1, -1));
@@ -254,8 +250,8 @@ public class InterfazParticipante extends javax.swing.JFrame {
 
     private void txtCuatrimestreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCuatrimestreKeyTyped
         char key = evt.getKeyChar();
-        if(key < 0 || key > 9) {
-            
+        if(key < '0' || key > '9') {
+            evt.consume();
         }
     }//GEN-LAST:event_txtCuatrimestreKeyTyped
 
